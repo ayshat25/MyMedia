@@ -88,6 +88,10 @@ header{
     align-items: center;
 }
 
+.promo_higlight{
+    color: #FF7426;
+}
+
 .promo_left, .promo_right {
     flex: 1;
 }
