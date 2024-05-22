@@ -10,10 +10,12 @@ body {
 
 .main{
     /* background: url(../img/main_bg.png) */
+    background-color: #FDF8EE;
 }
 
-.container{
-    width: 1440px;
+.container {
+    width: 90%;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -23,7 +25,7 @@ header{
     align-items: center;
     padding: 10px 20px;
     /* background-color: #f8f8f8; */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    /* box-shadow: 0 2px 4px rgba(0,0,0,0.1); */
 }
 
 .logo{
@@ -74,12 +76,6 @@ header{
 .promo {
     padding: 50px 0;
     /* background-color: #f8f8f8; */
-}
-
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 .promo_inner {
@@ -133,24 +129,29 @@ header{
 .notes_inner{
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    gap: 20px;
+    /* align-items: flex-start; */
+    /* gap: 20px; */
 }
 
 .notes_block {
     /* background-color: #fff; */
-    border-radius: 8px;
+    /* border-radius: 8px; */
+    width: 419px;
     /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
-    padding: 20px;
-    flex: 1;
-    text-align: center;
+    /* padding: 20px; */
+    /* flex: 1; */
+    /* text-align: center; */
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
 }
 
 .notes_icon {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
+    margin-right: 20px;
 }
 
 .notes_square {
@@ -178,4 +179,55 @@ p {
     font-size: 16px;
     line-height: 1.5;
     color: #b9b9b9;
+}
+
+.courses_text{
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.courses_big_text{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.courses_little_text{
+    font-size: 15px;
+    color: #8A8A8A;
+    margin-top: 16px;
+}
+
+.courses_block{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.courses_block_inner{
+    width: 450px;
+    height: 450px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.courses_img{
+    width: 93%;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+.courses_info{
+    display: flex;
+    flex-direction: column;
+}
+
+.courses_speciality{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
 }
