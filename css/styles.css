@@ -322,10 +322,24 @@ p {
 
 }
 
+.premium_top{
+    width: 100%;
+}
+
 .premium_top,.preimum_bottom{
     width: 100%;
     height: 150px;
     border: 1px solid black;
+}
+
+.premium_top_icon{
+    width: 100px;
+    height: 100px;
+    background-color: #4D2C5E;
+    border-radius: 10px;
+}
+.premium_icon{
+    width: 70%;
 }
 
 .preimum_text{
