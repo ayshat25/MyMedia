@@ -291,3 +291,48 @@ p {
     color:#ACACAC;
     font-size: 17px;
 }
+
+.advantages{
+    height: 636px;
+    background-color: #FDF8EE;
+}
+
+.advantages_inner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 636px;
+    /* background-color: #000; */
+}
+
+.advantages_left{
+    width: 50%;
+    background-color: #fff;
+    border: 1px solid black;
+}
+.advantages_right{
+    width: 50%;
+    background-color: #fff;
+    padding: 30px;
+}
+
+.premium{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.premium_top,.preimum_bottom{
+    width: 100%;
+    height: 150px;
+    border: 1px solid black;
+}
+
+.preimum_text{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.premium_orange{
+    color:#FF7426;
+}
