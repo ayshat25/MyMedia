@@ -386,24 +386,78 @@ p {
 }
 
 .reviews {
-    height: 500px;
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f9f9f9;
 }
 
 .reviews_promo {
-    display: flex;
-    align-items: center;
-    /* justify-content: center; */
-    flex-direction: column;
+    margin-bottom: 30px;
 }
 
 .reviews_text1 {
+    font-size: 2em;
     font-weight: bold;
-    font-size: 30px;
 }
 
 .reviews_text2 {
-    /* font-weight: bold; */
-    margin-top: 20px;
-    font-size: 20px;
-    color: #8A8A8A;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.reviews_list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.review_box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    width: 30%;
+    min-width: 250px;
+    box-sizing: border-box;
+    text-align: left;
+    /* Выравнивание текста в блоке по левому краю */
+}
+
+.review_text {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.review_author_info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    /* Отступ снизу для разделения с названием курса */
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    /* Отступ справа для разделения аватарки и имени */
+    object-fit: cover;
+    /* Обеспечивает обрезку изображения по размеру контейнера без растяжения */
+    object-position: center;
+}
+
+.review_author {
+    font-size: 0.9em;
+    color: #777;
+    font-weight: bold;
+}
+
+.course_name {
+    font-size: 0.9em;
+    color: #555;
+    font-style: italic;
+    margin-top: 0;
+    /* Убираем отступ сверху */
 }
