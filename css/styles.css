@@ -387,8 +387,8 @@ p {
 
 .reviews {
     text-align: center;
-    padding: 50px 0;
-    background-color: #f9f9f9;
+    padding: 30px 0;
+    background-color: #FdF8ee;
 }
 
 .reviews_promo {
@@ -401,14 +401,21 @@ p {
 }
 
 .reviews_text2 {
+    margin-top: 10px;
     font-size: 1.2em;
     color: #555;
 }
 
+.review_inner {
+    display: flex;
+    justify-content: center;
+}
+
 .reviews_list {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
+    width: 80%;
 }
 
 .review_box {
@@ -419,6 +426,7 @@ p {
     padding: 20px;
     margin: 10px;
     width: 30%;
+    height: 250px;
     min-width: 250px;
     box-sizing: border-box;
     text-align: left;
@@ -450,7 +458,7 @@ p {
 
 .review_author {
     font-size: 0.9em;
-    color: #777;
+    color: #353535;
     font-weight: bold;
 }
 
@@ -460,4 +468,214 @@ p {
     font-style: italic;
     margin-top: 0;
     /* Убираем отступ сверху */
+}
+
+.teachers {
+    text-align: center;
+    padding: 30px 0;
+    background-color: #FdF8ee;
+}
+
+.teachers_promo {
+    margin-bottom: 30px;
+}
+
+.teachers_text1 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.teachers_text2 {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.teachers_list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.teacher_box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    min-width: 250px;
+    box-sizing: border-box;
+    margin: 10px;
+    text-align: left;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.teacher_photo {
+    width: 100%;
+    height: 250px;
+    /* Фиксированная высота для всех изображений */
+    object-fit: cover;
+    /* Обрезка изображения по размеру контейнера без растяжения */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.teacher_info {
+    padding: 15px;
+}
+
+.teacher_name {
+    font-size: 1.2em;
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.teacher_education,
+.teacher_specialty {
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+.teacher_social {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.social_icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+.subscribe {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #FdF8ee;
+}
+
+.subscribe_inner {
+    display: flex;
+    justify-content: center;
+}
+
+.subscribe_purple {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 90%;
+    background-color: #4D2C5E;
+    padding: 40px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.subscribe_purple_inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subscribe_text {
+    margin-bottom: 20px;
+}
+
+.subscribe_text1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.subscribe_text2 {
+    font-size: 1em;
+    margin-bottom: 4px;
+}
+
+.subscribe_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+.subscribe_input {
+    padding: 10px 80px 10px 20px;
+    /* Отступ справа для кнопки */
+    border: none;
+    border-radius: 50px;
+    font-size: 1em;
+    width: 100%;
+    height: 65px;
+    box-sizing: border-box;
+}
+
+.subscribe_button {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 20px 25px;
+    /* Чуть меньше по высоте */
+    border: none;
+    border-radius: 50px;
+    background-color: #FF7426;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.subscribe_button:hover {
+    background-color: #f95b00;
+}
+
+.footer {
+    border-top: 1px solid #9d9d9d;
+    background-color: #FdF8ee;
+    color: #333;
+    padding: 40px 0;
+    text-align: left;
+}
+
+.container1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer_column {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer_logo {
+    margin-bottom: 20px;
+}
+
+.footer_logo img {
+    max-width: 150px;
+}
+
+.footer_description {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #535353;
+}
+
+.footer_column h3 {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.footer_column ul {
+    list-style-type: none;
+    padding: 0;
 }
