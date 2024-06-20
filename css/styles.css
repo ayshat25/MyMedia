@@ -187,8 +187,8 @@ p {
 }
 
 .courses {
-    height: 750px;
-    border: 1px solid black;
+    height: 650px;
+    /* border: 1px solid black; */
 }
 
 .courses_text {
@@ -349,6 +349,18 @@ p {
     align-items: center;
 }
 
+.premium_block_top_text {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.premium_block_bottom_text {
+    color: #8A8A8A;
+    font-size: 17px;
+    font-weight: bold;
+}
+
 .premium_top_icon {
     width: 100px;
     height: 100px;
@@ -371,4 +383,27 @@ p {
 
 .premium_orange {
     color: #FF7426;
+}
+
+.reviews {
+    height: 500px;
+}
+
+.reviews_promo {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+}
+
+.reviews_text1 {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.reviews_text2 {
+    /* font-weight: bold; */
+    margin-top: 20px;
+    font-size: 20px;
+    color: #8A8A8A;
 }
