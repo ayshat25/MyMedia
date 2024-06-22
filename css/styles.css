@@ -11,7 +11,7 @@ body {
 .main {
     /* background: url(../img/main_bg.png) */
     /* background-color: #FDF8EE; */
-    background-image: url(/img/main_bg.png)
+    background-image: url(../img/main_bg.png)
 }
 
 .container {
@@ -299,7 +299,7 @@ p {
 
 .advantages {
     height: 636px;
-    background-image: url(/img/main_bg2.png);
+    background-image: url(../img/main_bg2.png);
     background-size: 100%;
     /* background-color: #FDF8EE; */
 }
