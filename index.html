@@ -11,93 +11,103 @@
 
 <body>
     <div class="main">
-        <header>
-            <div class="logo"><img src="icons/logo.png" alt=""></div>
-            <nav class="navbar">
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="index.html">Главная</a></li>
-                    <li class="nav-item"><a href="about.html">О нас</a></li>
-                    <li class="nav-item"><a href="courses.html">Курсы</a></li>
-                    <li class="nav-item"><a href="#">Наши услуги</a></li>
-                    <li class="nav-item"><a href="#">Контакты</a></li>
-                    <li class="nav-item sign-in" onclick="document.getElementById('loginModal').style.display='block'"><a href="#">Войти</a></li>                </ul>
-            </nav>
-        </header>
-
-        <div id="loginModal" class="modal">
-            <span onclick="document.getElementById('loginModal').style.display='none'" class="close" title="Закрыть Modal">&times;</span>
-            <form class="modal-content" action="../action_page.php">
-                <div class="container">
-                    <h1>Вход</h1>
-                    <hr>
-                    <label for="email"><b>Email</b></label>
-                    <input type="text" placeholder="Введите Email" name="email" required>
-              
-                    <label for="psw"><b>Пароль</b></label>
-                    <input type="password" placeholder="Введите пароль" name="psw" required>
-                    
-                    <label>
-                      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Запомнить меня
-                    </label>
-              
-                    <p>Нет аккаунта? <a href="#" style="color:dodgerblue" onclick="showRegisterModal()">Зарегистрироваться</a>.</p>
-              
-                    <div class="clearfix">
-                      <button type="button" onclick="document.getElementById('loginModal').style.display='none'" class="cancelbtn btnlogin">Отменить</button>
-                      <button type="submit" class="signupbtn btnlogin">Войти</button>
-                    </div>
-                </div>
-            </form>
-        </div>
-
-        <!-- Modal Register -->
-        <div id="registerModal" class="modal">
-            <span onclick="document.getElementById('registerModal').style.display='none'" class="close" title="Закрыть Modal">&times;</span>
-            <form class="modal-content" action="../register_page.php">
-                <div class="container">
-                    <h1>Регистрация</h1>
-                    <hr>
-                    <label for="email"><b>Email</b></label>
-                    <input type="text" placeholder="Введите Email" name="email" required>
-              
-                    <label for="psw"><b>Пароль</b></label>
-                    <input type="password" placeholder="Введите пароль" name="psw" required>
-                    
-                    <label for="psw-repeat"><b>Повторите Пароль</b></label>
-                    <input type="password" placeholder="Повторите пароль" name="psw-repeat" required>
-                    
-                    <label>
-                      <input type="checkbox" name="remember" style="margin-bottom:15px"> Запомнить меня
-                    </label>
-              
-                    <p>Создавая учетную запись, вы соглашаетесь с нашими <a href="#" style="color:dodgerblue">Условиями и конфиденциальностью</a>.</p>
-              
-                    <div class="clearfix">
-                      <button type="button" onclick="document.getElementById('registerModal').style.display='none'" class="cancelbtn btnlogin">Отменить</button>
-                      <button type="submit" class="signupbtn btnlogin">Зарегистрироваться</button>
-                    </div>
-                </div>
-            </form>
-        </div>
-
-        <section class="promo">
-            <div class="container">
-                <div class="promo_inner">
-                    <div class="promo_left">
-                        <div class="promo_bigText">Развивай Свои <span class="promo_higlight">Навыки</span><br>и Стань
-                            <span class="promo_higlight">Профессионалом</span> в Цифровом <span
-                                class="promo_higlight">Мире</span>
+        <div class="block_bg_first">
+            <header>
+                <div class="logo"><img src="icons/logo.png" alt=""></div>
+                <nav class="navbar">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="index.html">Главная</a></li>
+                        <li class="nav-item"><a href="about.html">О нас</a></li>
+                        <li class="nav-item"><a href="courses.html">Курсы</a></li>
+                        <li class="nav-item"><a href="services.html">Наши услуги</a></li>
+                        <li class="nav-item"><a href="#footer">Контакты</a></li>
+                        <li class="nav-item sign-in" onclick="document.getElementById('loginModal').style.display='block'"><a href="#">Войти</a></li>                </ul>
+                </nav>
+            </header>
+    
+            <div id="loginModal" class="modal">
+                <span onclick="document.getElementById('loginModal').style.display='none'" class="close" title="Закрыть Modal">&times;</span>
+                <form class="modal-content" action="../action_page.php">
+                    <div class="container">
+                        <h1>Вход</h1>
+                        <hr>
+                        <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Введите Email" name="email" required>
+                  
+                        <label for="psw"><b>Пароль</b></label>
+                        <input type="password" placeholder="Введите пароль" name="psw" required>
+                        
+                        <label>
+                          <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Запомнить меня
+                        </label>
+                  
+                        <p>Нет аккаунта? <a href="#" style="color:dodgerblue" onclick="showRegisterModal()">Зарегистрироваться</a>.</p>
+                  
+                        <div class="clearfix">
+                          <button type="button" onclick="document.getElementById('loginModal').style.display='none'" class="cancelbtn btnlogin">Отменить</button>
+                          <button type="submit" class="signupbtn btnlogin">Войти</button>
                         </div>
-                        <div class="promo_littleText">Присоединяйся к нам и сделай первый шаг к успешной карьере в
-                            медиа. Знания и навыки, полученные на наших курсах, откроют перед тобой новые возможности и
-                            помогут стать востребованным специалистом.</div>
                     </div>
-                    <div class="promo_right">
-                        <img src="img/promo.png" alt="promo">
-                    </div>
-                </div>
+                </form>
             </div>
-        </section>
+<!-- Modal Register -->
+<div id="registerModal" class="modal">
+    <span onclick="document.getElementById('registerModal').style.display='none'" class="close" title="Закрыть Modal">&times;</span>
+    <form class="modal-content" action="../register_page.php">
+        <div class="container">
+            <h1>Регистрация</h1>
+            <hr>
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Введите Email" name="email" required>
+      
+            <label for="psw"><b>Пароль</b></label>
+            <input type="password" placeholder="Введите пароль" name="psw" required>
+            
+            <label for="psw-repeat"><b>Повторите Пароль</b></label>
+            <input type="password" placeholder="Повторите пароль" name="psw-repeat" required>
+            
+            <label>
+              <input type="checkbox" name="remember" style="margin-bottom:15px"> Запомнить меня
+            </label>
+      
+            <p>Создавая учетную запись, вы соглашаетесь с нашими <a href="#" style="color:dodgerblue">Условиями и конфиденциальностью</a>.</p>
+      
+            <div class="clearfix">
+              <button type="button" onclick="document.getElementById('registerModal').style.display='none'" class="cancelbtn btnlogin">Отменить</button>
+              <button type="submit" class="signupbtn btnlogin">Зарегистрироваться</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<section class="promo">
+    <div class="container">
+        <div class="promo_inner">
+            <div class="promo_left">
+                <div class="promo_bigText">Развивай Свои <span class="promo_higlight">Навыки</span><br>и Стань
+                    <span class="promo_higlight">Профессионалом</span> в Цифровом <span
+                        class="promo_higlight">Мире</span>
+                </div>
+                <div class="promo_littleText">Присоединяйся к нам и сделай первый шаг к успешной карьере в
+                    медиа. Знания и навыки, полученные на наших курсах, откроют перед тобой новые возможности и
+                    помогут стать востребованным специалистом.</div>
+
+                    <form class="promo_search">
+                        <input type="text" class="promo_input" placeholder="Найти курс...">
+                        <button type="submit" class="promo_button">Отправить</button>
+                    </form>
+                    
+            </div>
+            <div class="promo_right">
+                <img src="img/promo.png" alt="promo">
+            </div>
+        </div>
+    </div>
+</section>
+
+        </div>
+        
+        
     </div>
 
     <section class="notes">
@@ -398,7 +408,7 @@
         </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="container1">
             <div class="footer_column">
                 <div class="footer_logo">

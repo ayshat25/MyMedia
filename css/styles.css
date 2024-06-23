@@ -8,12 +8,13 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.main {
+.block_bg_first{
     background-image: url(../img/main_bg.png)
+
 }
 
 .container {
-    width: 90%;
+    width: 80%;
     max-width: 1400px;
     margin: 0 auto;
 }
@@ -22,15 +23,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 0px 30px;
     /* background-color: #f8f8f8; */
     /* box-shadow: 0 2px 4px rgba(0,0,0,0.1); */
 }
 
 .logo img {
-    /* font-size: 24px; */
-    /* font-weight: bold; */
-    width: 100px;
+    width: 150px;
 }
 
 .navbar {
@@ -74,38 +73,23 @@ header {
 }
 
 .promo {
-    padding: 50px 0;
+    height: 600px;
+    /* padding: 50px 0; */
     /* background-color: #f8f8f8; */
 }
 
 .promo_inner {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: top; */
 }
 
 .promo_higlight {
     color: #FF7426;
 }
 
-.promo_left,
-.promo_right {
-    flex: 1;
-}
-
-.promo_left {
-    padding-right: 20px;
-}
-
-.promo_right {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .promo_right img {
     max-width: 100%;
-    /* Увеличиваем размер изображения */
     height: auto;
 }
 
@@ -831,16 +815,24 @@ input[type=text], input[type=password] {
     border-radius: 5px;
   }
 
-  .filter {
+
+
+.filter {
     margin: 20px 0;
     text-align: center;
 }
 
-.filter select {
+.filter select,
+.filter input {
     padding: 10px;
     font-size: 16px;
     border-radius: 5px;
     border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+.filter input {
+    width: 300px;
 }
 
 /* Courses section */
