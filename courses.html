@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo"><img src="icons/logo.png" alt=""></div>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html">Главная</a></li>
+                <li class="nav-item"><a href="about.html">О нас</a></li>
+                <li class="nav-item"><a href="courses.html">Курсы</a></li>
+                <li class="nav-item"><a href="#">Наши услуги</a></li>
+                <li class="nav-item"><a href="#">Контакты</a></li>
+                <li class="nav-item sign-in" onclick="document.getElementById('loginModal').style.display='block'"><a href="#">Войти</a></li>                </ul>
+        </nav>
+    </header>
+
+    <div class="main">
+        <div class="container">
+            <h1>Courses</h1>
+    
+            <!-- Filter section -->
+            <div class="filter">
+                <select id="courseFilter">
+                    <option value="all">Все курсы</option>
+                    <option value="grafic-design">Графический дизайн</option>
+                    <option value="oratorical-art">Ораторское исскуство</option>
+                    <option value="video-editing">Видеомонтаж</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+    
+            <!-- Courses section -->
+            <div id="coursesContainer">
+                <div class="course-block" data-category="grafic-design">
+                    <img class="courses_img" src="img/course1.jpg" alt="">
+                    <div class="courses_info">
+                        <div class="courses_speciality">
+                            <div class="courses_speciality_text">Графический дизайн</div>
+                            <div class="courses_speciality_rating">img</div>
+                        </div>
+                        <div class="courses_info_name">Гуру Графического Дизайна</div>
+                        <div class="courses_info_price">5 699 Р</div>
+                        <hr class="hr-dotted">
+                        <div class="courses_info_little">
+                            <div class="info_little_inner">
+                                <img src="icons/clock.png"></img>
+                                <div class="little_inner_text">43ч 45мин</div>
+                            </div>
+                            <div class="info_little_inner">
+                                <img src="icons/camera.png"></img>
+                                <div class="little_inner_text">23 Курса</div>
+                            </div>
+                            <div class="info_little_inner">
+                                <img src="icons/download.png"></img>
+                                <div class="little_inner_text">15 Прохождений</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-block" data-category="oratorical-art">
+                    <img class="courses_img" src="img/course2.jpg" alt="">
+                        <div class="courses_info">
+                            <div class="courses_speciality">
+                                <div class="courses_speciality_text">Ораторское искусство</div>
+                                <div class="courses_speciality_rating">img</div>
+                            </div>
+                            <div class="courses_info_name">Формальное выступление</div>
+                            <div class="courses_info_price">3 499 Р</div>
+                            <hr class="hr-dotted">
+                            <div class="courses_info_little">
+                                <div class="info_little_inner">
+                                    <img src="icons/clock.png"></img>
+                                    <div class="little_inner_text">14ч 20мин</div>
+                                </div>
+                                <div class="info_little_inner">
+                                    <img src="icons/camera.png"></img>
+                                    <div class="little_inner_text">22 Курса</div>
+                                </div>
+                                <div class="info_little_inner">
+                                    <img src="icons/download.png"></img>
+                                    <div class="little_inner_text">25 Прохождений</div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="course-block" data-category="video-editing">
+                    <img class="courses_img" src="img/course3.jpg" alt="">
+                    <div class="courses_info">
+                        <div class="courses_speciality">
+                            <div class="courses_speciality_text">Видеомонтаж</div>
+                            <div class="courses_speciality_rating">img</div>
+                        </div>
+                        <div class="courses_info_name">Основы видеомонтажа в программе Adobe Premiere Pro</div>
+                        <div class="courses_info_price">2 799 Р</div>
+                        <hr class="hr-dotted">
+                        <div class="courses_info_little">
+                            <div class="info_little_inner">
+                                <img src="icons/clock.png"></img>
+                                <div class="little_inner_text">10ч 15мин</div>
+                            </div>
+                            <div class="info_little_inner">
+                                <img src="icons/camera.png"></img>
+                                <div class="little_inner_text">23 Курса</div>
+                            </div>
+                            <div class="info_little_inner">
+                                <img src="icons/download.png"></img>
+                                <div class="little_inner_text">40 Прохождений</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-block" data-category="video-editing">
+                    <img class="courses_img" src="img/course3.jpg" alt="">
+                    <div class="courses_info">
+                        <div class="courses_speciality">
+                            <div class="courses_speciality_text">Видеомонтаж</div>
+                            <div class="courses_speciality_rating">img</div>
+                        </div>
+                        <div class="courses_info_name">Основы видеомонтажа в программе Adobe Premiere Pro</div>
+                        <div class="courses_info_price">2 799 Р</div>
+                        <hr class="hr-dotted">
+                        <div class="courses_info_little">
+                            <div class="info_little_inner">
+                                <img src="icons/clock.png"></img>
+                                <div class="little_inner_text">10ч 15мин</div>
+                            </div>
+                            <div class="info_little_inner">
+                                <img src="icons/camera.png"></img>
+                                <div class="little_inner_text">23 Курса</div>
+                            </div>
+                            <div class="info_little_inner">
+                                <img src="icons/download.png"></img>
+                                <div class="little_inner_text">40 Прохождений</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-block" data-category="video-editing">
+                    <img class="courses_img" src="img/course3.jpg" alt="">
+                    <div class="courses_info">
+                        <div class="courses_speciality">
+                            <div class="courses_speciality_text">Видеомонтаж</div>
+                            <div class="courses_speciality_rating">img</div>
+                        </div>
+                        <div class="courses_info_name">Основы видеомонтажа в программе Adobe Premiere Pro</div>
+                        <div class="courses_info_price">2 799 Р</div>
+                        <hr class="hr-dotted">
+                        <div class="courses_info_little">
+                            <div class="info_little_inner">
+                                <img src="icons/clock.png"></img>
+                                <div class="little_inner_text">10ч 15мин</div>
+                            </div>
+                            <div class="info_little_inner">
+                                <img src="icons/camera.png"></img>
+                                <div class="little_inner_text">23 Курса</div>
+                            </div>
+                            <div class="info_little_inner">
+                                <img src="icons/download.png"></img>
+                                <div class="little_inner_text">40 Прохождений</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-block" data-category="video-editing">
+                    <img class="courses_img" src="img/course3.jpg" alt="">
+                    <div class="courses_info">
+                        <div class="courses_speciality">
+                            <div class="courses_speciality_text">Видеомонтаж</div>
+                            <div class="courses_speciality_rating">img</div>
+                        </div>
+                        <div class="courses_info_name">Основы видеомонтажа в программе Adobe Premiere Pro</div>
+                        <div class="courses_info_price">2 799 Р</div>
+                        <hr class="hr-dotted">
+                        <div class="courses_info_little">
+                            <div class="info_little_inner">
+                                <img src="icons/clock.png"></img>
+                                <div class="little_inner_text">10ч 15мин</div>
+                            </div>
+                            <div class="info_little_inner">
+                                <img src="icons/camera.png"></img>
+                                <div class="little_inner_text">23 Курса</div>
+                            </div>
+                            <div class="info_little_inner">
+                                <img src="icons/download.png"></img>
+                                <div class="little_inner_text">40 Прохождений</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more course blocks as needed -->
+            </div>
+        </div>
+    </div>
+    <!-- Main content -->
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container1">
+            <div class="footer_column">
+                <div class="footer_logo">
+                    <img src="icons/logo.png" alt="Logo">
+                    <p class="footer_description">Наш сайт предлагает лучшие курсы для вашего обучения и карьерного
+                        роста.</p>
+                </div>
+            </div>
+            <div class="footer_column">
+                <h3>Компания</h3>
+                <ul>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Как работать</a></li>
+                    <li><a href="#">Популярные курсы</a></li>
+                    <li><a href="#">Сервис</a></li>
+                </ul>
+            </div>
+            <div class="footer_column">
+                <h3>Курсы</h3>
+                <ul>
+                    <li><a href="#">Категории</a></li>
+                    <li><a href="#">Видеокурсы</a></li>
+                </ul>
+            </div>
+            <div class="footer_column">
+                <h3>Поддержка</h3>
+                <ul>
+                    <li><a href="#">Вопросы и ответы</a></li>
+                    <li><a href="#">Центр поддержки</a></li>
+                    <li><a href="#">Карьера</a></li>
+                    <li><a href="#">Конфиденциальность</a></li>
+                </ul>
+            </div>
+            <div class="footer_column">
+                <h3>Контактная информация</h3>
+                <ul>
+                    <li>Телефон: +123 456 789</li>
+                    <li>Email: info@example.com</li>
+                    <li>Адрес: 123 ул.Жуковского, Грозный, Россия</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
