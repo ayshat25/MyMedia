@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My media</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -32,10 +31,10 @@
                         <h1>Вход</h1>
                         <hr>
                         <label for="email"><b>Email</b></label>
-                        <input type="text" placeholder="Введите Email" name="email" required>
+                        <input class="passText" type="text" placeholder="Введите Email" name="email" required>
                   
                         <label for="psw"><b>Пароль</b></label>
-                        <input type="password" placeholder="Введите пароль" name="psw" required>
+                        <input class="passText" type="password" placeholder="Введите пароль" name="psw" required>
                         
                         <label>
                           <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Запомнить меня
@@ -50,68 +49,63 @@
                     </div>
                 </form>
             </div>
-<!-- Modal Register -->
-<div id="registerModal" class="modal">
-    <span onclick="document.getElementById('registerModal').style.display='none'" class="close" title="Закрыть Modal">&times;</span>
-    <form class="modal-content" action="../register_page.php">
-        <div class="container">
-            <h1>Регистрация</h1>
-            <hr>
-            <label for="email"><b>Email</b></label>
-            <input type="text" placeholder="Введите Email" name="email" required>
-      
-            <label for="psw"><b>Пароль</b></label>
-            <input type="password" placeholder="Введите пароль" name="psw" required>
-            
-            <label for="psw-repeat"><b>Повторите Пароль</b></label>
-            <input type="password" placeholder="Повторите пароль" name="psw-repeat" required>
-            
-            <label>
-              <input type="checkbox" name="remember" style="margin-bottom:15px"> Запомнить меня
-            </label>
-      
-            <p>Создавая учетную запись, вы соглашаетесь с нашими <a href="#" style="color:dodgerblue">Условиями и конфиденциальностью</a>.</p>
-      
-            <div class="clearfix">
-              <button type="button" onclick="document.getElementById('registerModal').style.display='none'" class="cancelbtn btnlogin">Отменить</button>
-              <button type="submit" class="signupbtn btnlogin">Зарегистрироваться</button>
+            <!-- Modal Register -->
+            <div id="registerModal" class="modal">
+                <span onclick="document.getElementById('registerModal').style.display='none'" class="close" title="Закрыть Modal">&times;</span>
+                <form class="modal-content" action="../register_page.php">
+                    <div class="container">
+                        <h1>Регистрация</h1>
+                        <hr>
+                        <label for="email"><b>Email</b></label>
+                        <input class="passText" type="text" placeholder="Введите Email" name="email" required>
+                
+                        <label for="psw"><b>Пароль</b></label>
+                        <input class="passText" type="password" placeholder="Введите пароль" name="psw" required>
+                        
+                        <label for="psw-repeat"><b>Повторите Пароль</b></label>
+                        <input class="passText" type="password" placeholder="Повторите пароль" name="psw-repeat" required>
+                        
+                        <label>
+                        <input type="checkbox" name="remember" style="margin-bottom:15px"> Запомнить меня
+                        </label>
+                
+                        <p>Создавая учетную запись, вы соглашаетесь с нашими <a href="#" style="color:dodgerblue">Условиями и конфиденциальностью</a>.</p>
+                
+                        <div class="clearfix">
+                        <button type="button" onclick="document.getElementById('registerModal').style.display='none'" class="cancelbtn btnlogin">Отменить</button>
+                        <button type="submit" class="signupbtn btnlogin">Зарегистрироваться</button>
+                        </div>
+                    </div>
+                </form>
             </div>
-        </div>
-    </form>
-</div>
 
-<section class="promo">
-    <div class="container">
-        <div class="promo_inner">
-            <div class="promo_left">
-                <div class="promo_bigText">Развивай Свои <span class="promo_higlight">Навыки</span><br>и Стань
-                    <span class="promo_higlight">Профессионалом</span> в Цифровом <span
-                        class="promo_higlight">Мире</span>
+            <section class="promo">
+                <div class="container">
+                    <div class="promo_inner">
+                        <div class="promo_left">
+                            <div class="promo_bigText">Развивай Свои <span class="promo_higlight">Навыки</span><br>и Стань
+                                <span class="promo_higlight">Профессионалом</span> в Цифровом <span
+                                    class="promo_higlight">Мире</span>
+                            </div>
+                            <div class="promo_littleText">Присоединяйся к нам и сделай первый шаг к успешной карьере в
+                                медиа. Знания и навыки, полученные на наших курсах, откроют перед тобой новые возможности и
+                                помогут стать востребованным специалистом.</div>
+                                <form class="promo_search">
+                                    <input type="text" class="promo_input" placeholder="Найти курс...">
+                                    <button type="submit" class="promo_button">Отправить</button>
+                                </form>
+                        </div>
+                        <div class="promo_right">
+                            <img src="img/promo.png" alt="promo">
+                        </div>
+                    </div>
                 </div>
-                <div class="promo_littleText">Присоединяйся к нам и сделай первый шаг к успешной карьере в
-                    медиа. Знания и навыки, полученные на наших курсах, откроют перед тобой новые возможности и
-                    помогут стать востребованным специалистом.</div>
-
-                    <form class="promo_search">
-                        <input type="text" class="promo_input" placeholder="Найти курс...">
-                        <button type="submit" class="promo_button">Отправить</button>
-                    </form>
-                    
-            </div>
-            <div class="promo_right">
-                <img src="img/promo.png" alt="promo">
-            </div>
+            </section>
         </div>
-    </div>
-</section>
-
-        </div>
-        
-        
     </div>
 
     <section class="notes">
-        <div class="container">
+        <!-- <div class="container"> -->
             <div class="notes_inner">
 
                 <div class="notes_block">
@@ -163,7 +157,7 @@
                 </div>
 
             </div>
-        </div>
+        <!-- </div> -->
     </section>
 
     <section class="courses">
@@ -180,7 +174,7 @@
                     <div class="courses_info">
                         <div class="courses_speciality">
                             <div class="courses_speciality_text">Графический дизайн</div>
-                            <div class="courses_speciality_rating">img</div>
+                            <!-- <div class="courses_speciality_rating">img</div> -->
                         </div>
                         <div class="courses_info_name">Гуру Графического Дизайна</div>
                         <div class="courses_info_price">5 699 Р</div>
@@ -207,7 +201,7 @@
                     <div class="courses_info">
                         <div class="courses_speciality">
                             <div class="courses_speciality_text">Ораторское искусство</div>
-                            <div class="courses_speciality_rating">img</div>
+                            <!-- <div class="courses_speciality_rating">img</div> -->
                         </div>
                         <div class="courses_info_name">Формальное выступление</div>
                         <div class="courses_info_price">3 499 Р</div>
@@ -234,7 +228,7 @@
                     <div class="courses_info">
                         <div class="courses_speciality">
                             <div class="courses_speciality_text">Видеомонтаж</div>
-                            <div class="courses_speciality_rating">img</div>
+                            <!-- <div class="courses_speciality_rating">img</div> -->
                         </div>
                         <div class="courses_info_name">Основы видеомонтажа в программе Adobe Premiere Pro</div>
                         <div class="courses_info_price">2 799 Р</div>
@@ -302,15 +296,15 @@
             <div class="review_inner">
                 <div class="reviews_list">
                     <div class="review_box">
-                        <p class="review_text">"Курс был очень информативным и полезным!"</p>
+                        <p class="review_text">"Курс оказался невероятно информативным и полезным, предоставив массу ценных знаний и практических навыков. "</p>
                         <div class="review_author_info">
                             <img src="img/av1.jpg" alt="Avatar" class="avatar">
                             <p class="review_author">- Иван И.</p>
                         </div>
-                        <p class="course_name">Курс по программированию</p>
+                        <p class="course_name">Курс по видеомонтажу</p>
                     </div>
                     <div class="review_box">
-                        <p class="review_text">"Преподаватели отлично объясняют материал."</p>
+                        <p class="review_text">"Преподаватели отлично объясняют материал, делая сложные концепции понятными и доступными.."</p>
                         <div class="review_author_info">
                             <img src="img/av2.jpg" alt="Avatar" class="avatar">
                             <p class="review_author">- Ольга П.</p>
@@ -318,12 +312,12 @@
                         <p class="course_name">Курс по дизайну</p>
                     </div>
                     <div class="review_box">
-                        <p class="review_text">"Очень рекомендую этот курс всем!"</p>
+                        <p class="review_text">"Очень рекомендую этот курс всем, кто хочет повысить свои навыки и профессиональный уровень.!"</p>
                         <div class="review_author_info">
                             <img src="img/av3.jpg" alt="Avatar" class="avatar">
                             <p class="review_author">- Алексей С.</p>
                         </div>
-                        <p class="course_name">Курс по маркетингу</p>
+                        <p class="course_name">Курс по фотообработке</p>
                     </div>
                 </div>
             </div>
@@ -341,12 +335,10 @@
                     <img src="img/av1.jpg" alt="Teacher 1" class="teacher_photo">
                     <div class="teacher_info">
                         <p class="teacher_name">Иван Иванов</p>
-                        <p class="teacher_education">Образование: МГУ, специальность - Математика</p>
-                        <p class="teacher_specialty">Специальность: Преподаватель математики</p>
+                        <p class="teacher_education">Образование: МГУ, специальность - Информатика</p>
+                        <p class="teacher_specialty">Специалист по фото и видеомонтажу с более чем 10-летним опытом. Мастерски владеет программами Adobe Photoshop, Lightroom, Premiere Pro и After Effects</p>
                         <div class="teacher_social">
-                            <a href="https://instagram.com/teacher1" target="_blank">
-                                <img src="icons/inst.jpg" alt="Instagram" class="social_icon">
-                            </a>
+                                <img src="icons/inst.jpg" alt="Instagram" class="social_icon">                            
                             <a href="https://twitter.com/teacher1" target="_blank">
                                 <img src="icons/twit.jpg" alt="Twitter" class="social_icon">
                             </a>
@@ -357,12 +349,10 @@
                     <img src="img/av2.jpg" alt="Teacher 2" class="teacher_photo">
                     <div class="teacher_info">
                         <p class="teacher_name">Ольга Петрова</p>
-                        <p class="teacher_education">Образование: СПбГУ, специальность - Физика</p>
-                        <p class="teacher_specialty">Специальность: Преподаватель физики</p>
+                        <p class="teacher_education">Образование: СПбГУ, специальность - Филолог</p>
+                        <p class="teacher_specialty">Провела более 300 тренингов и мастер-классов, обучая студентов уверенно и эффективно выступать перед любой аудиторией.</p>
                         <div class="teacher_social">
-                            <a href="https://instagram.com/teacher2" target="_blank">
                                 <img src="icons/inst.jpg" alt="Instagram" class="social_icon">
-                            </a>
                             <a href="https://twitter.com/teacher2" target="_blank">
                                 <img src="icons/twit.jpg" alt="Twitter" class="social_icon">
                             </a>
@@ -374,11 +364,9 @@
                     <div class="teacher_info">
                         <p class="teacher_name">Алексей Смирнов</p>
                         <p class="teacher_education">Образование: МГТУ, специальность - Информатика</p>
-                        <p class="teacher_specialty">Специальность: Преподаватель информатики</p>
+                        <p class="teacher_specialty">Эксперт в использовании программ Adobe Illustrator, Photoshop и InDesign. Участвовал в разработке более 200 проектов, включая брендинг, упаковку, веб-дизайн и рекламные материалы. </p>
                         <div class="teacher_social">
-                            <a href="https://instagram.com/teacher3" target="_blank">
                                 <img src="icons/inst.jpg" alt="Instagram" class="social_icon">
-                            </a>
                             <a href="https://twitter.com/teacher3" target="_blank">
                                 <img src="icons/twit.jpg" alt="Twitter" class="social_icon">
                             </a>
@@ -452,8 +440,6 @@
             </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>
 </body>
 

@@ -34,6 +34,64 @@
                 <li class="nav-item sign-in" onclick="document.getElementById('loginModal').style.display='block'"><a href="#">Войти</a></li>                </ul>
         </nav>
     </header>
+    <div class="main">
+        <div id="loginModal" class="modal">
+            <span onclick="document.getElementById('loginModal').style.display='none'" class="close" title="Закрыть Modal">&times;</span>
+            <form class="modal-content" action="../action_page.php">
+                <div class="container">
+                    <h1>Вход</h1>
+                    <hr>
+                    <label for="email"><b>Email</b></label>
+                    <input class="passText" type="text" placeholder="Введите Email" name="email" required>
+              
+                    <label for="psw"><b>Пароль</b></label>
+                    <input class="passText" type="password" placeholder="Введите пароль" name="psw" required>
+                    
+                    <label>
+                      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Запомнить меня
+                    </label>
+              
+                    <p>Нет аккаунта? <a href="#" style="color:dodgerblue" onclick="showRegisterModal()">Зарегистрироваться</a>.</p>
+              
+                    <div class="clearfix">
+                      <button type="button" onclick="document.getElementById('loginModal').style.display='none'" class="cancelbtn btnlogin">Отменить</button>
+                      <button type="submit" class="signupbtn btnlogin">Войти</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- Modal Register -->
+    <div id="registerModal" class="modal">
+        <span onclick="document.getElementById('registerModal').style.display='none'" class="close" title="Закрыть Modal">&times;</span>
+        <form class="modal-content" action="../register_page.php">
+            <div class="container">
+                <h1>Регистрация</h1>
+                <hr>
+                <label for="email"><b>Email</b></label>
+                <input class="passText" type="text" placeholder="Введите Email" name="email" required>
+        
+                <label for="psw"><b>Пароль</b></label>
+                <input class="passText" type="password" placeholder="Введите пароль" name="psw" required>
+                
+                <label for="psw-repeat"><b>Повторите Пароль</b></label>
+                <input class="passText" type="password" placeholder="Повторите пароль" name="psw-repeat" required>
+                
+                <label>
+                <input type="checkbox" name="remember" style="margin-bottom:15px"> Запомнить меня
+                </label>
+        
+                <p>Создавая учетную запись, вы соглашаетесь с нашими <a href="#" style="color:dodgerblue">Условиями и конфиденциальностью</a>.</p>
+        
+                <div class="clearfix">
+                <button type="button" onclick="document.getElementById('registerModal').style.display='none'" class="cancelbtn btnlogin">Отменить</button>
+                <button type="submit" class="signupbtn btnlogin">Зарегистрироваться</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    </div>
     
 
     <main>
@@ -108,9 +166,9 @@
                             <img src="images/blogs/blog-3.png" alt="">
                         </div>
                         <div class="blog-info">
-                            <h3 class="blog-title">7 typography tips
-                                for interface design</h3>
-                            <p class="blog-author">By <a href="">Jeremiah Lam</a></p>
+                            <h3 class="blog-title">7 лайфхаков по фотообработке
+                                </h3>
+                            <p class="blog-author">От <a href="">Хамзатовой Элизат</a></p>
                         </div>
                     </article>
                     <article class="blog">
@@ -118,9 +176,8 @@
                             <img src="images/blogs/blog-4.png" alt="">
                         </div>
                         <div class="blog-info">
-                            <h3 class="blog-title">Your logo is
-                                copied</h3>
-                            <p class="blog-author">By <a href="">Ferdinand Vogler</a></p>
+                            <h3 class="blog-title">Правила создания логотипа</h3>
+                            <p class="blog-author">От <a href="">Даудовой Аси</a></p>
                         </div>
                     </article>
                 </div>
@@ -129,15 +186,15 @@
 
         <!-- Latest Courses -->
         <section class="container" style="margin-bottom: 35px;">
-            <h2 class="section-title">Latest Courses</h2>
-            <div class="courses">
+            <h2 class="section-title">Новые курсы на сайте</h2>
+            <div class="coursesA">
                 <div class="course">
                     <div class="course-banner">
-                        <img src="images/courses/course-1.png" alt="">
+                        <img src="img/course1.jpg" alt="">
                     </div>
                     <div class="course-detail">
-                        <h3 class="course-title">React - The Complete Guide 2020</h3>
-                        <p class="course-author">Reed Krakoff.</p>
+                        <h3 class="course-title">Гуру Графического Дизайна</h3>
+                        <p class="course-author">Джайрханова Айша</p>
                         <div class="course-info">
                             <div>
                                 <i class="fas fa-star filled"></i>
@@ -157,11 +214,11 @@
                 </div>
                 <div class="course">
                     <div class="course-banner">
-                        <img src="images/courses/course-2.png" alt="">
+                        <img src="img/course2.jpg" alt="">
                     </div>
                     <div class="course-detail">
-                        <h3 class="course-title">Powerpoint 2020 Master Powerpoint Cour</h3>
-                        <p class="course-author">Walter Scott</p>
+                        <h3 class="course-title">Ораторское искусство</h3>
+                        <p class="course-author">Хамзатова Элизат</p>
                         <div class="course-info">
                             <div>
                                 <i class="fas fa-star filled"></i>
@@ -181,11 +238,11 @@
                 </div>
                 <div class="course">
                     <div class="course-banner">
-                        <img src="images/courses/course-3.png" alt="">
+                        <img src="img/course3.jpg" alt="">
                     </div>
                     <div class="course-detail">
-                        <h3 class="course-title">The Complete JavaScript Course 2020</h3>
-                        <p class="course-author">Reed Krakoff.</p>
+                        <h3 class="course-title">Основы видеомонтажа в программе Adobe Premiere Pro</h3>
+                        <p class="course-author">Гакаева Милана</p>
                         <div class="course-info">
                             <div>
                                 <i class="fas fa-star filled"></i>
@@ -253,5 +310,7 @@
         </div>
     </div>
 </footer>
+<script src="script.js"></script>
+
 </body>
 </html>
